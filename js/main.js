@@ -34,6 +34,10 @@ window.addEventListener('load', function () {
         document.getElementById('card').prepend(cardElement);
     }
 
+    function addCardToPage(cardElement) {
+        document.getElementById('card').firstChild.replaceWith(cardElement);
+    }
+
 
     const form = document.getElementById('country-form');
     form.addEventListener('submit', searchAndAddCountry);
